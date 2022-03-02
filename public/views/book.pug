@@ -1,0 +1,26 @@
+html
+    link(rel="stylesheet",href="../style.css")
+    head
+        title pug document
+    body
+        h1 Show Book
+        div.table
+            table
+                thead
+                    th Book_no
+                    th Book_name 
+                    th Category 
+                    th Price 
+                    th Pages
+                    
+                tbody
+                    each x in Book
+                        tr
+                            td= x.book_no
+                            td= x.book_name 
+                            td= x.category 
+                            td= x.price 
+                            td= x.pages
+                            
+
+            h3.alert.alert-dark Programmed by #{programmer}

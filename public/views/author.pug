@@ -1,0 +1,21 @@
+html
+    link(rel="stylesheet",href="../style.css")
+    head
+        title pug document
+    body
+      
+            h1 Show Author
+              div.table
+                 table
+                    thead
+                      th author_id
+                      th Name
+                    
+                    tbody
+                      each x in Author 
+                         tr
+                            td= x.author_id
+                            td= x.name
+                            
+
+            h3.alert.alert-dark Programmed by #{programmer}

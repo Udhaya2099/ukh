@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+
+        <h1>BOOKS</h1>
+        <div id="form">
+            <form action="book/store" method="post">
+            <table>
+                <tr>
+                    <th>Book_no</th>
+                    <td><input type="text" name="book_no"></td>
+                </tr>
+
+                <tr>
+                    <th>book_name</th>
+                    <td><input type="text" name="book_name"></td>
+                </tr>
+                
+                <tr>
+                    <th>category</th>
+                    <td><input type="text" name="category"></td>
+                </tr>
+
+                <tr>
+                    <th>price</th>
+                    <td><input type="text" name="price"></td>
+                </tr>
+
+                <tr>
+                    <th>pages</th>
+                    <td><input type="number" name="pages"></td>
+                </tr>
+
+                <tr>   
+                    <td style="text-align: center;" colspan="2">
+                       <button type="submit" class="success">Add Book</button>
+                    </td>
+                </tr>
+
+            </table>
+            </form>
+        </div>
+        
+    </body>
+</html>
